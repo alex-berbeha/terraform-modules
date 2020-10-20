@@ -6,7 +6,7 @@ resource "google_compute_firewall" "network-deny-ports" {
   direction          = var.direction
   priority           = var.priority
   destination_ranges = direction == "INGRESS" ? null : var.destination_ranges
-  source_ranges      = direction == "EGRESS" ? 1 : var.source_ranges
+  source_ranges      = direction == "EGRESS" ? null : var.source_ranges
 
   deny {
     protocol = var.protocol_name

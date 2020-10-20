@@ -1,5 +1,5 @@
 variable "rule_type" {
-  descrcription = "can be deny or allow"
+  description = "can be deny or allow"
   type          = string
   default       = "allow"
 }
