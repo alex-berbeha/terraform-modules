@@ -28,11 +28,11 @@ variable "direction" {
 }
 
 variable "destination_ranges" {
-  default = "[0.0.0.0/0]"
+  default = [0.0.0.0/0]
 }
 
 variable "source_ranges" {
-  default = "[0.0.0.0/0]"
+  default = [0.0.0.0/0]
 }
 
 variable "target_service_accounts" {
