@@ -1,7 +1,7 @@
 variable "rule_type" {
   description = "can be deny or allow"
-  type          = string
-  default       = "allow"
+  type        = string
+  default     = "allow"
 }
 
 variable "firewall_name" {
