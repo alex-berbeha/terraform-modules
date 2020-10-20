@@ -5,8 +5,8 @@ resource "google_compute_firewall" "network-deny-ports" {
   network            = var.network
   direction          = var.direction
   priority           = var.priority
-  destination_ranges = direction == "INGRESS" ? null : var.destination_ranges
-  source_ranges      = direction == "EGRESS" ? null : var.source_ranges
+  destination_ranges = var.direction == "INGRESS" ? null : var.destination_ranges
+  source_ranges      = var.direction == "EGRESS" ? null : var.source_ranges
 
   deny {
     protocol = var.protocol_name
@@ -24,8 +24,8 @@ resource "google_compute_firewall" "network-allow-ports" {
   network            = var.network
   direction          = var.direction
   priority           = var.priority
-  destination_ranges = direction == "INGRESS" ? null : var.destination_ranges
-  source_ranges      = direction == "EGRESS" ? null : var.source_ranges
+  destination_ranges = var.direction == "INGRESS" ? null : var.destination_ranges
+  source_ranges      = var.direction == "EGRESS" ? null : var.source_ranges
 
   allow {
     protocol = var.protocol_name
