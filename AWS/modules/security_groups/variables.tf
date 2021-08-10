@@ -4,23 +4,23 @@ variable "sg_name" {
 }
 
 variable "vpc_id" {
-    description = "VPC ID"
-    type = string
+  description = "VPC ID"
+  type        = string
 }
 
 variable "ingress_allows_ports" {
-    description = "ports list"
-    type = list
+  description = "ports list"
+  type        = list
 }
 
 variable "protocol" {
-    type = string
+  type = string
 }
 
 variable "cidr_list" {
-    type = list
+  type = list
 }
 
 variable "sg_tags" {
-    type = map
+  type = map
 }
