@@ -15,7 +15,7 @@ variable "internet_gateway_status" {
   default     = true
 }
 
-variable "vpc_tags" {
+variable "igw_tags" {
   description = "IGW tags"
   type        = map
   default     = {}
