@@ -8,3 +8,15 @@ variable "vpc_tags" {
   description = "VPC tags"
   type        = map
 }
+
+variable "internet_gateway_status" {
+  description = "IGW status creation"
+  type        = bool
+  default     = true
+}
+
+variable "vpc_tags" {
+  description = "IGW tags"
+  type        = map
+  default     = {}
+}
