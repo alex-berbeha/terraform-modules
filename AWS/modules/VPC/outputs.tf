@@ -4,6 +4,6 @@ output "VPC_id" {
 }
 
 output "igw_id" {
-  value = aws_internet_gateway.IGW.id
+  value = aws_internet_gateway.IGW.id[0]
   description = "Internet gateway's ID"
 }
